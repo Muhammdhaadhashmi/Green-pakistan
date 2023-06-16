@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Customer.View_Botonical_information">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@drawable/containerbtnstyle">
+
+        <androidx.appcompat.widget.Toolbar
+            android:background="#F6F3F3"
+            android:id="@+id/toolbarlab"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+
+            android:layout_height="match_parent"
+            app:title="Botonical Information">
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rec"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

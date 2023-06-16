@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.greenplants_pak">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET " />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/chefficon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/chefficon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Ministry.Response_"></activity>
+        <activity android:name=".Customer.Add_progress" />
+        <activity android:name=".Customer.View_Botonical_information" />
+        <activity android:name=".Customer.AddBotnoicalinformation" />
+        <activity android:name=".Ministry.MinistryDashbaord" />
+        <activity android:name=".ShopKeeper.OwnItemForDelete" />
+        <activity android:name=".AddReminder" />
+        <activity android:name=".Management.Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Drawer.Delete"
+            android:label="@string/title_activity_delete"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ShopKeeper.SuperDash" />
+        <activity android:name=".Management.ForgotPassword" /> <!-- <activity android:name=".Admin.RequestTabLayout" /> -->
+        <activity android:name=".ShopKeeper.ViewPicture" />
+        <activity android:name=".Customer.RecipieView" />
+        <activity android:name=".WetherUpdate" />
+        <activity android:name=".ShopKeeper.AddPlants" />
+        <activity android:name=".CalculatorView" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapPackage.OnLocationViewActivity"
+            android:label="@string/title_activity_on_location_view" />
+        <activity android:name=".Management.Signup" /> <!-- <activity android:name=".Admin.UpdateProfileAdmin" /> -->
+        <!-- <activity android:name=".Admin.ViewApproveAdmin" /> -->
+        <!-- <activity android:name=".Admin.ViewAccountForApproveByAdmin" /> -->
+        <activity
+            android:name=".MapPackage.MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".MapPackage.SetLocation" />
+        <activity android:name=".ViewReminder" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Customer.ShowItemsRecipieForComplain" />
+        <activity android:name=".Ministry.View_Complain" />
+        <activity android:name=".MapPackage.SetLocationForGetService" />
+        <activity android:name=".Customer.Add_complain_" />
+        <activity android:name=".Customer.ShowItems" />
+        <activity android:name=".Customer.ShowMinistry"/>
+        <activity android:name=".Ministry.View_Progress" />
+        <activity android:name=".Customer.ShowItemsRecipieOnly" /> <!-- <activity android:name=".Admin.AdminDashboard" /> -->
+        <!-- <activity android:name=".Admin.ShowNotificationtoAdmin" /> -->
+        <!-- <activity android:name=".Admin.ViewAccountAndTheirRequests" /> -->
+        <activity android:name=".MapPackage.PostMapActivityLocation" />
+        <activity android:name=".Customer.ShowShopKeeper" />
+        <activity android:name=".Customer.ShowshopForChat" />
+        <activity android:name=".Customer.SuperDashForCustomer" />
+        <activity android:name=".Customer.UpdateProfileForCustomer" />
+        <activity android:name=".Customer.ShowNotitifcationResponse" />
+        <activity android:name=".Customer.ShowLocalRecipieOnly" />
+        <activity android:name=".ChatFiles.ChatActivity" />
+        <activity android:name=".ChatFiles.ChatActivityForShop" />
+        <activity android:name=".MapPackage.MapsActivityViewLocation" />
+        <activity android:name=".ShopKeeper.ShowItemsToShopKeeper" />
+        <activity android:name=".ShopKeeper.ShowNotification" />
+        <activity android:name=".HireAndRating.RatingBarActivity" />
+        <activity android:name=".ShopKeeper.ShowCustomerForChat" />
+        <activity android:name=".HireActivity.HireActivity" />
+        <activity android:name=".Customer.UpdateProfileForCheff" />
+        <activity android:name=".Management.VerificationActivity" />
+        <activity android:name=".Management.Login" />
+    </application>
+
+</manifest>

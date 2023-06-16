@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "151060436183",
+    "project_id": "green-pakistan-2f2e8",
+    "storage_bucket": "green-pakistan-2f2e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:151060436183:android:0d5e49b20f37fd79258c92",
+        "android_client_info": {
+          "package_name": "com.example.greenplants_pak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "151060436183-914v65vhvgsp9hdbbersusoh2svco34t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaFoX0mewir2bf9XUOnNio1Jji3JAvhns"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "151060436183-914v65vhvgsp9hdbbersusoh2svco34t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

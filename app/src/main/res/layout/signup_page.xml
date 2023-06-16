@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="#F0F2F6"
+        android:cropToPadding="true"
+        android:padding="5dp"
+        android:paddingVertical="5dp"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:tint="#596C84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,UnusedAttribute,UseAppTint" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="94dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="59dp"
+        android:src="@drawable/applogo"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/simchooseimg"
+        android:layout_width="190dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:src="@drawable/camera2"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="149dp"
+        android:fontFamily="@font/bold"
+        android:text="@string/Register"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#F0F2F6"
+            tools:ignore="UnusedAttribute">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center_vertical"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8B8D93"
+                android:textSize="20sp"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#F0F2F6"
+            tools:ignore="UnusedAttribute">
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center_vertical"
+                android:hint="@string/useremail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8B8D93"
+                android:textSize="20sp"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#F0F2F6"
+            tools:ignore="UnusedAttribute">
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center_vertical"
+                android:hint="@string/userpassword"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+
+                android:textColorHint="#8B8D93"
+                android:textSize="20sp"
+                tools:ignore="Autofill" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#F0F2F6"
+            tools:ignore="UnusedAttribute">
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center_vertical"
+                android:hint="@string/userphonenumber"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8B8D93"
+                android:textSize="20sp"
+                tools:ignore="Autofill,TextFields" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#F0F2F6"
+            tools:ignore="UnusedAttribute">
+
+            <EditText
+                android:id="@+id/cnic"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center_vertical"
+                android:hint="@string/CNIC"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8B8D93"
+                android:textSize="20sp"
+                tools:ignore="Autofill,TextFields" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#F0F2F6"
+            tools:ignore="UnusedAttribute">
+
+            <EditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center_vertical"
+                android:hint="@string/location"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8B8D93"
+                android:textSize="20sp"
+                tools:ignore="Autofill,TextFields" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_round"
+            android:backgroundTint="#F0F2F6"
+            tools:ignore="UnusedAttribute">
+
+            <EditText
+                android:id="@+id/shop"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:drawableTint="@color/colorPrimary"
+                android:fontFamily="@font/bold_roboto"
+                android:gravity="center_vertical"
+                android:inputType="number"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColorHint="#8B8D93"
+                android:textSize="20sp"
+                tools:ignore="Autofill,TextFields" />
+            <Spinner
+                android:id="@+id/usertype"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@null"
+                android:entries="@array/usertype"
+                android:layout_marginTop="10dp"
+                android:drawableTint="@color/colorPrimary"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:inputType="number"
+                android:textSize="20sp"
+                android:elevation="5dp"
+                />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/reg"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_round"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/bold_roboto"
+        android:gravity="center"
+        android:stateListAnimator="@null"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.175"
+        tools:ignore="UnusedAttribute" />
+
+
+    <TextView
+        android:id="@+id/txtlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="172dp"
+        android:fontFamily="@font/black"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/reg"
+        tools:ignore="ContentDescription" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
